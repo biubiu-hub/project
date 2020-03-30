@@ -1,0 +1,43 @@
+@import 'resert';
+#banner{
+    position: relative;
+   width: 100%;
+}
+.banner {
+    margin: 0 auto;
+    height: 500px;
+    width: 1903px;
+    position: relative; 
+}
+
+.banner ul li {
+    opacity: 0;
+}
+
+.banner ul li img {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.banner ol {
+    position: absolute;
+    bottom: 18px;
+    right: 200px;
+}
+
+.banner ol li {
+    float: left;
+    height: 8px;
+    width: 8px;
+    background:rgba($color: #ccc, $alpha: .5);
+    margin-left: 17px;
+    border-radius: 50%;
+    text-indent: -999em;
+    cursor: pointer;
+}
+.banner ol li.active{
+    background: #e8251f;
+}
+

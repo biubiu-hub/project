@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/* 重置样式 */
+body, div, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, ul, p, pre, td, textarea, th, a, span {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: '微软雅黑';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+b, strong {
+  font-weight: normal;
+}
+
+em, i {
+  font-style: normal;
+}
+
+a, u {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  /* 解决IE低版本：当图片有超链接的时候，存在一个蓝色边框 */
+}
+
+input {
+  /*清除input 聚焦时候的蓝色边框*/
+  outline: none;
+}
+
+/* 清除浮动*/
+.clear_fix::after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear_fix {
+  zoom: 1;
+}
+
+#tool {
+  width: 100%;
+  background: #333;
+}
+
+.tool_con {
+  height: 35px;
+  width: 1226px;
+  margin: 0 auto;
+}
+
+.tool_list {
+  width: 580px;
+  line-height: 35px;
+  text-align: center;
+  float: left;
+}
+
+.tool_list li {
+  float: left;
+  height: 35px;
+  font-size: 13px;
+  line-height: 35px;
+}
+
+.tool_list li a {
+  display: block;
+  width: 145px;
+  color: #fff;
+}
+
+#tool .active {
+  background: #555;
+}
+
+.tool_right {
+  width: 556px;
+  float: right;
+  line-height: 35px;
+}
+
+.tool_login {
+  height: 35px;
+  text-align: center;
+  float: left;
+  font-size: 13px;
+  position: relative;
+}
+.tool_login .login {
+  width: 84px;
+  height: 100%;
+  float: left;
+}
+.tool_login ul {
+  float: right;
+  margin-left: 12px;
+}
+.tool_login ul li {
+  float: left;
+  width: 120px;
+  height: 100%;
+}
+.tool_login ul li a img {
+  width: 11px;
+  height: 12px;
+}
+.tool_login ul li:nth-of-type(1) {
+  padding-left: 22px;
+}
+.tool_login span {
+  color: #fff;
+  margin: 0 12px;
+}
+.tool_login a {
+  color: #ffffff;
+  font-size: 12px;
+}
+.tool_login .admin {
+  float: left;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 400px;
+  color: #fff;
+}
+
+.tool_my:hover .tool_form {
+  display: block;
+}
+
+.tool_my {
+  position: relative;
+}
+
+.tool_form {
+  position: absolute;
+  top: 35px;
+  height: 237px;
+  width: 230px;
+  box-shadow: 0px 0px 2px 0px #e1e0e0;
+  z-index: 999;
+  background: #fff;
+  display: none;
+}
+
+.tool_user {
+  padding-top: 18px;
+  padding-left: 25px;
+  overflow: hidden;
+  height: 55px;
+}
+
+.tool_user img {
+  display: block;
+  float: left;
+}
+
+.tool_user p {
+  cursor: pointer;
+  float: left;
+  margin-left: 16px;
+}
+
+.tool_user p:nth-of-type(1) {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.tool_user p:nth-of-type(2) {
+  font-size: 13px;
+  line-height: 5px !important;
+}
+
+.tool_mess {
+  height: 93px;
+  text-align: left;
+  padding: 0 16px 0 25px;
+  line-height: 30px;
+  margin-top: 5px;
+}
+
+.tool_mess span {
+  margin: 0 29px !important;
+  color: #666 !important;
+}
+
+.tool_mess a {
+  color: #666 !important;
+}
+
+/*# sourceMappingURL=header.css.map */

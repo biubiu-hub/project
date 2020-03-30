@@ -1,0 +1,997 @@
+@charset "UTF-8";
+/* 重置样式 */
+body, div, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, ul, p, pre, td, textarea, th, a, span {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: '微软雅黑';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+b, strong {
+  font-weight: normal;
+}
+
+em, i {
+  font-style: normal;
+}
+
+a, u {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  /* 解决IE低版本：当图片有超链接的时候，存在一个蓝色边框 */
+}
+
+input {
+  /*清除input 聚焦时候的蓝色边框*/
+  outline: none;
+}
+
+/* 清除浮动*/
+.clear_fix::after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear_fix {
+  zoom: 1;
+}
+
+#tool {
+  width: 100%;
+  background: #333;
+}
+
+.tool_con {
+  height: 35px;
+  width: 1226px;
+  margin: 0 auto;
+}
+
+.tool_list {
+  width: 580px;
+  line-height: 35px;
+  text-align: center;
+  float: left;
+}
+
+.tool_list li {
+  float: left;
+  height: 35px;
+  font-size: 13px;
+  line-height: 35px;
+}
+
+.tool_list li a {
+  display: block;
+  width: 145px;
+  color: #fff;
+}
+
+#tool .active {
+  background: #555;
+}
+
+.tool_right {
+  width: 556px;
+  float: right;
+  line-height: 35px;
+}
+
+.tool_login {
+  height: 35px;
+  text-align: center;
+  float: left;
+  font-size: 13px;
+  position: relative;
+}
+.tool_login .login {
+  width: 84px;
+  height: 100%;
+  float: left;
+}
+.tool_login ul {
+  float: right;
+  margin-left: 12px;
+}
+.tool_login ul li {
+  float: left;
+  width: 120px;
+  height: 100%;
+}
+.tool_login ul li a img {
+  width: 11px;
+  height: 12px;
+}
+.tool_login ul li:nth-of-type(1) {
+  padding-left: 22px;
+}
+.tool_login span {
+  color: #fff;
+  margin: 0 12px;
+}
+.tool_login a {
+  color: #ffffff;
+  font-size: 12px;
+}
+.tool_login .admin {
+  float: left;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 400px;
+  color: #fff;
+}
+
+.tool_my:hover .tool_form {
+  display: block;
+}
+
+.tool_my {
+  position: relative;
+}
+
+.tool_form {
+  position: absolute;
+  top: 35px;
+  height: 237px;
+  width: 230px;
+  box-shadow: 0px 0px 2px 0px #e1e0e0;
+  z-index: 999;
+  background: #fff;
+  display: none;
+}
+
+.tool_user {
+  padding-top: 18px;
+  padding-left: 25px;
+  overflow: hidden;
+  height: 55px;
+}
+
+.tool_user img {
+  display: block;
+  float: left;
+}
+
+.tool_user p {
+  cursor: pointer;
+  float: left;
+  margin-left: 16px;
+}
+
+.tool_user p:nth-of-type(1) {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.tool_user p:nth-of-type(2) {
+  font-size: 13px;
+  line-height: 5px !important;
+}
+
+.tool_mess {
+  height: 93px;
+  text-align: left;
+  padding: 0 16px 0 25px;
+  line-height: 30px;
+  margin-top: 5px;
+}
+
+.tool_mess span {
+  margin: 0 29px !important;
+  color: #666 !important;
+}
+
+.tool_mess a {
+  color: #666 !important;
+}
+
+.logo-con {
+  width: 1226px;
+  height: 78px;
+  margin: 0 auto;
+}
+
+.logo-con h1 {
+  float: left;
+}
+
+.logo_nav {
+  margin-left: 40px;
+  float: left;
+}
+
+.logo_nav li {
+  float: left;
+}
+
+.logo_nav li a:hover {
+  color: red;
+}
+
+.logo_nav li a {
+  display: block;
+  width: 90px;
+  line-height: 78px;
+  text-align: center;
+  color: #000;
+}
+
+.logo_nav .logo_col a {
+  color: red;
+}
+
+.logo_navList {
+  position: absolute;
+  left: 0px;
+  height: 230px;
+  width: 100%;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: none;
+  z-index: 9999;
+  background: #fff;
+}
+
+.logo_navListCon {
+  width: 1226px;
+  margin: 0 auto;
+  height: 230px;
+}
+.logo_navListCon p {
+  float: left;
+}
+.logo_navListCon p a {
+  margin-left: 32px;
+  line-height: 230px;
+  color: #666;
+}
+
+.logo_navListConRight {
+  width: 1059px;
+  height: 230px;
+  float: left;
+  position: relative;
+  margin-left: 45px;
+}
+.logo_navListConRight dl {
+  float: left;
+  width: 135px;
+  height: 190px;
+  margin: 25px 36px 0;
+  text-align: center;
+}
+.logo_navListConRight dl dd {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 8px;
+}
+
+.logo_navListConRight dl .line {
+  width: 1px;
+  height: 120px;
+  background: #eee;
+  position: absolute;
+  top: 35px;
+  margin-left: 165px;
+}
+
+.search {
+  height: 38px;
+  width: 200px;
+  border: 1px solid #e3e3e3;
+  float: right;
+  margin-top: 17px;
+}
+
+.sTxt {
+  height: 38px;
+  width: 155px;
+  padding-left: 10px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #a9a9a9;
+  float: left;
+  border: none;
+}
+
+.sBtn {
+  width: 30px;
+  height: 38px;
+  background: url("http://images.changhong.com/chgw/images/home-serach-btn_05.png") no-repeat center center;
+  cursor: pointer;
+  border: none;
+  float: left;
+}
+
+.banner_menu {
+  height: 480px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 113px;
+  left: 17.8%;
+  padding: 10px 0;
+  z-index: 999;
+}
+.banner_menu ul li {
+  height: 60px;
+  width: 226px;
+  text-align: center;
+}
+.banner_menu ul li a {
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+}
+.banner_menu ul li li:nth-of-type(1) a {
+  background: url("http://images.changhong.com/chgw/images/inner-chiq-icon.png") no-repeat left 30px center;
+}
+.banner_menu ul li li:nth-of-type(2) a {
+  background: url("http://images.changhong.com/chgw/images/inner-TV-icon.png") no-repeat left 30px center;
+}
+.banner_menu ul li li:nth-of-type(3) a {
+  background: url("http://images.changhong.com/chgw/images/inner-air-icon.png") no-repeat left 30px center;
+}
+.banner_menu ul li li:nth-of-type(4) a {
+  background: url("http://images.changhong.com/chgw/images/inner-icebox-icon.png") no-repeat left 30px center;
+}
+.banner_menu ul li li:nth-of-type(5) a {
+  background: url("http://images.changhong.com/chgw/images/inner-ele-icon.png") no-repeat left 30px center;
+}
+.banner_menu ul li li:nth-of-type(6) a {
+  background: url("http://images.changhong.com/chgw/images/inner-digital-icon.png") no-repeat left 30px center;
+}
+.banner_menu ul li li:nth-of-type(7) a {
+  background: url("http://images.changhong.com/chgw/images/inner-other-icon.png") no-repeat left 30px center;
+}
+
+.banner_menu ul li.active {
+  background: red;
+}
+
+#banner_menuList {
+  width: 480px;
+  height: 476px;
+  padding: 24px 40px 0;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 225px;
+  display: none;
+}
+
+.item {
+  display: none;
+}
+
+#banner_menuList div {
+  padding-bottom: 30px;
+}
+
+.banner_menuListTop {
+  width: 400px;
+  height: 141px;
+}
+
+#banner_menuList a {
+  color: #000;
+  display: inline;
+  text-align: left;
+}
+
+#banner_menuList p a img {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  float: left;
+}
+
+.banner_one {
+  height: 71px;
+}
+.banner_one a {
+  float: left;
+}
+
+.banner_two {
+  height: 62px;
+  padding-top: 8px;
+  border-top: 1px solid #ccc;
+}
+.banner_two a {
+  float: left;
+  margin-left: 30px;
+}
+
+.ban_a {
+  height: 71px;
+}
+
+.ban_b {
+  height: 39px;
+}
+
+#banner .banner_two a {
+  border-left: 1px solid #e0e0e0;
+  padding: 0 15px;
+  font-size: 14px;
+  text-align: left;
+}
+
+#banner_menuListMid, #banner_menuListBot {
+  width: 400px;
+  height: 110px;
+}
+
+.logo_nav li:hover .logo_navList {
+  display: block;
+}
+
+/* 重置样式 */
+body, div, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, ul, p, pre, td, textarea, th, a, span {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: '微软雅黑';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+b, strong {
+  font-weight: normal;
+}
+
+em, i {
+  font-style: normal;
+}
+
+a, u {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  /* 解决IE低版本：当图片有超链接的时候，存在一个蓝色边框 */
+}
+
+input {
+  /*清除input 聚焦时候的蓝色边框*/
+  outline: none;
+}
+
+/* 清除浮动*/
+.clear_fix::after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear_fix {
+  zoom: 1;
+}
+
+#banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner {
+  margin: 0 auto;
+  height: 500px;
+  width: 1903px;
+  position: relative;
+}
+
+.banner ul li {
+  opacity: 0;
+}
+
+.banner ul li img {
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.banner ol {
+  position: absolute;
+  bottom: 18px;
+  right: 200px;
+}
+
+.banner ol li {
+  float: left;
+  height: 8px;
+  width: 8px;
+  background: rgba(204, 204, 204, 0.5);
+  margin-left: 17px;
+  border-radius: 50%;
+  text-indent: -999em;
+  cursor: pointer;
+}
+
+.banner ol li.active {
+  background: #e8251f;
+}
+
+#content {
+  width: 100%;
+  background: #f9f9f9;
+  padding-bottom: 40px;
+}
+#content .content-con {
+  width: 1226px;
+  min-height: 160px;
+  margin: 0 auto;
+}
+#content #loutinav {
+  width: 45px;
+  position: fixed;
+  top: 165px;
+  left: 15%;
+  display: none;
+}
+#content #loutinav ul li {
+  width: 45px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  color: #003;
+}
+#content #loutinav ul li span {
+  width: 45px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 1px solid #ccc;
+}
+#content #loutinav ul li.active span {
+  background: #c00;
+  color: #fff;
+  display: block;
+}
+#content #loutinav ul li:hover span {
+  background: #c00;
+  color: #fff;
+  display: block;
+}
+#content #loutinav ul li:nth-of-type(1) span {
+  border-top: none;
+}
+
+.public {
+  height: 40px;
+  width: 100%;
+  background: url("http://images.changhong.com/chgw/images/home-radio-icon_03.png") no-repeat left center;
+}
+.public p {
+  line-height: 40px;
+  float: left;
+  font-size: 14px;
+  color: #333;
+  margin-left: 50px;
+}
+.public .scroll {
+  width: 1128px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.pub_con {
+  height: 160px;
+  width: 1226px;
+  margin-bottom: 30px;
+}
+
+.pub_conLeft {
+  width: 226px;
+  height: 160px;
+  text-align: center;
+  float: left;
+  position: relative;
+}
+.pub_conLeft li {
+  width: 113px;
+  height: 80px;
+  background: #585858;
+  float: left;
+}
+.pub_conLeft .pub_hLine {
+  width: 1px;
+  background: #ccc;
+  height: 160px;
+  position: absolute;
+  left: 50%;
+}
+.pub_conLeft .pub_sLine {
+  width: 226px;
+  background: #ccc;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.pub_conLeft a {
+  display: block;
+  height: 100%;
+}
+.pub_conLeft a img {
+  padding: 15px 0 0;
+  margin: 0 39px;
+}
+.pub_conLeft b {
+  color: #fff;
+  font-size: 14px;
+}
+
+.pub_quick {
+  float: left;
+}
+.pub_quick li {
+  float: left;
+  margin-left: 13px;
+  cursor: pointer;
+  height: 160px;
+}
+
+.watch {
+  padding-top: 30px;
+}
+
+.watch_title {
+  height: 30px;
+  width: 1226px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.watch_title .watch_titleLeft {
+  width: 226px;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+}
+.watch_title .watch_titleLeft p {
+  font-size: 22px;
+  padding-left: 13px;
+  border-left: 4px solid #ca694e;
+  float: left;
+  color: #333;
+}
+.watch_title .watch_titleLeft a {
+  font-size: 14px;
+  float: right;
+  margin-right: 5px;
+  color: #8a4532;
+}
+.watch_title .watch_titleRight {
+  line-height: 30px;
+  width: 1000px;
+  height: 30px;
+  float: left;
+}
+.watch_title .watch_titleRight ul {
+  float: right;
+}
+.watch_title .watch_titleRight ul li {
+  float: left;
+  margin-left: 33px;
+}
+.watch_title .watch_titleRight a {
+  font-size: 14px;
+  color: #333;
+}
+
+.watch_con {
+  height: 630px;
+}
+.watch_con .watch_conLeft {
+  width: 226px;
+  height: 100%;
+  float: left;
+}
+.watch_con .watch_conLeft img {
+  height: 100%;
+  width: 100%;
+}
+.watch_con .watch_conRight {
+  width: 1000px;
+  height: 100%;
+  float: right;
+}
+.watch_con .watch_conRight .watch_small {
+  width: 190px;
+  height: 260px;
+  background: #fff;
+  margin: 0 0 10px 10px;
+  padding: 25px;
+  color: #666;
+  text-align: center;
+  float: left;
+}
+.watch_con .watch_conRight .watch_small dd {
+  margin: 10px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.watch_con .watch_conRight .watch_small dd:nth-of-type(1) a {
+  color: #000;
+  font-size: 14px;
+}
+.watch_con .watch_conRight .watch_small dd:nth-of-type(2) {
+  color: #ccc;
+  font-size: 12px;
+}
+.watch_con .watch_conRight .watch_small dd:nth-of-type(3) {
+  color: red;
+}
+.watch_con .watch_conLife {
+  width: 226px;
+  height: 310px;
+  float: left;
+}
+.watch_con .watch_conLife img {
+  height: 100%;
+  width: 100%;
+}
+
+.watch_last {
+  height: 310px;
+}
+
+.watch_random ul li {
+  width: 190px;
+  height: 260px;
+  background: #fff;
+  margin: 0 0 10px 10px;
+  padding: 25px;
+  color: #666;
+  text-align: center;
+  float: left;
+}
+.watch_random ul li p {
+  margin: 10px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #000;
+  font-size: 14px;
+}
+.watch_random ul li span {
+  display: block;
+  color: #999;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.watch_random ul li strong {
+  display: block;
+  font-size: 16px;
+  color: #f12012;
+  margin-top: 10px;
+}
+
+#footer {
+  height: 564px;
+  width: 100%;
+  background: #efefef;
+  margin: 0 auto;
+}
+#footer .footer_con {
+  width: 1226px;
+  height: 340px;
+  margin: 0 auto;
+}
+#footer .foot_top {
+  padding: 37px 25px 0px;
+  height: 77px;
+  border-bottom: 1px solid #dddddd;
+}
+#footer .foot_top_l {
+  height: 44px;
+  width: 182px;
+  background: url("http://cn.changhong.com/images/describe-1_03.png") no-repeat left center;
+  float: left;
+}
+#footer .foot_top_l p {
+  width: 112px;
+  height: 100%;
+  margin-left: 70px;
+}
+#footer .foot_top_l p b {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+#footer .foot_top_l p span {
+  font-size: 14px;
+  color: #999;
+}
+#footer .foot_top_m {
+  float: left;
+  margin-left: 270px;
+  background: url("http://cn.changhong.com/images/describe-2_03.png") no-repeat left center;
+}
+#footer .foot_top_r {
+  float: right;
+  background: url("http://cn.changhong.com/images/describe-3_05.png") no-repeat left center;
+}
+
+.foot_bottom {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.foot_bottom_l {
+  width: 360px;
+  padding-left: 25px;
+  float: left;
+}
+.foot_bottom_l .foot_bootom_ll {
+  float: left;
+  margin-left: 40px;
+}
+.foot_bottom_l .foot_bootom_ll li a {
+  color: #999;
+  font-size: 12px;
+  line-height: 30px;
+}
+.foot_bottom_l .foot_bootom_ll li:nth-of-type(1) {
+  margin-bottom: 18px;
+  color: #333;
+}
+.foot_bottom_l .foot_bootom_lr {
+  float: right;
+}
+
+.foot_bottom_m {
+  width: 186px;
+  float: left;
+  margin-left: 48px;
+}
+.foot_bottom_m ul {
+  float: left;
+}
+.foot_bottom_m ul li a {
+  color: #999;
+  font-size: 12px;
+  line-height: 30px;
+}
+.foot_bottom_m ul li:nth-of-type(1) {
+  margin-bottom: 18px;
+  color: #333;
+}
+.foot_bottom_m ul:nth-of-type(1) {
+  float: left;
+}
+.foot_bottom_m ul:nth-of-type(2) {
+  float: right;
+}
+.foot_bottom_m p {
+  clear: both;
+  width: 186px;
+  text-align: right;
+  line-height: 30px;
+  border-top: 1px solid #ccc;
+}
+
+.foot_bottom_mr {
+  float: left;
+  margin-left: 62px;
+  width: 175px;
+  border-left: 1px solid #ccc;
+  padding-left: 50px;
+}
+.foot_bottom_mr p {
+  line-height: 40px;
+}
+.foot_bottom_mr p a {
+  padding-left: 35px;
+}
+.foot_bottom_mr p:nth-of-type(1) {
+  background: url("http://images.changhong.com/chgw/images/Customer-service_12.png") no-repeat left center;
+}
+.foot_bottom_mr p:nth-of-type(2) {
+  background: url("http://images.changhong.com/chgw/images/feedback_17.png") no-repeat left center;
+}
+.foot_bottom_mr h1 {
+  font-size: 20px;
+}
+
+.foot_bottom_r {
+  float: left;
+  width: 285px;
+  border-left: 1px solid #ccc;
+}
+.foot_bottom_r dl {
+  float: left;
+  margin-left: 20px;
+  text-align: center;
+}
+.foot_bottom_r img {
+  height: 108px;
+  width: 108px;
+}
+
+#bottom {
+  width: 100%;
+  background: #333;
+}
+#bottom .bottom-con {
+  width: 1226px;
+  height: 224px;
+  margin: 0 auto;
+}
+
+.bottom_logo {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 19px;
+  padding-top: 20px;
+}
+
+.beian {
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.bottom_last {
+  margin-top: 24px;
+}
+.bottom_last p {
+  height: 32px;
+  float: left;
+  line-height: 32px;
+  background: url("http://cn.changhong.com/images/wzba-icon_03.png") no-repeat left center;
+  padding-left: 32px;
+  margin-left: 125px;
+  color: #999;
+}
+.bottom_last p:nth-of-type(2) {
+  background: url("http://cn.changhong.com/images/cxwz-icon_06.png") no-repeat left center;
+}
+.bottom_last p:nth-of-type(3) {
+  background: url("http://cn.changhong.com/images/wsjy-icon_06.png") no-repeat left center;
+}
+.bottom_last p:nth-of-type(4) {
+  background: url("http://cn.changhong.com/images/kxr-icon_08.png") no-repeat left center;
+}
+
+/*# sourceMappingURL=index.css.map */

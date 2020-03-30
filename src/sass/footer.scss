@@ -1,0 +1,187 @@
+#footer{
+    height:564px;
+    width: 100%;
+    background: #efefef;
+    margin: 0 auto;
+    .footer_con{
+        width: 1226px;
+        height: 340px;
+        margin: 0 auto;
+       
+    }
+    .foot_top{
+        padding: 37px 25px 0px;
+        height: 77px;
+        border-bottom: 1px solid #dddddd;
+    }
+    .foot_top_l{
+        height: 44px;
+        width: 182px;
+        background: url("http://cn.changhong.com/images/describe-1_03.png") no-repeat left center;
+        float: left;
+        p{
+            width: 112px;
+            height: 100%;
+            margin-left: 70px;
+            b{
+                font-size: 18px;
+                font-weight: bold;
+                color: #333;
+            }
+            span{
+                font-size: 14px;
+                color: #999;
+            }
+        }
+    }
+    
+    .foot_top_m{
+        float: left;
+        margin-left:270px;
+        background: url("http://cn.changhong.com/images/describe-2_03.png") no-repeat left center;
+
+    }
+    .foot_top_r{
+        float: right;
+        background: url("http://cn.changhong.com/images/describe-3_05.png") no-repeat left center;
+
+    }
+}
+.foot_bottom{
+    width: 100%;
+    margin-top: 20px;
+}
+.foot_bottom_l{
+    width: 360px;
+    padding-left: 25px;
+    float: left;
+    .foot_bootom_ll{
+        float: left;
+        margin-left: 40px;
+
+        li a{
+            color: #999;
+            font-size: 12px;
+            line-height: 30px;
+        }
+        li:nth-of-type(1){
+            margin-bottom: 18px;
+            color: #333;
+        }
+       
+    }
+    .foot_bootom_lr{
+        float: right;
+    }
+}    
+.foot_bottom_m{
+    width: 186px;
+    float: left;
+    margin-left: 48px;
+    ul{
+        float: left;
+        li a{
+            color: #999;
+            font-size: 12px;
+            line-height: 30px;
+        }
+        li:nth-of-type(1){
+            margin-bottom: 18px;
+            color: #333;
+        }
+       
+    }
+    ul:nth-of-type(1){
+        float: left;
+    }
+    ul:nth-of-type(2){
+        float: right;
+    }
+    p{
+        clear: both;
+        width: 186px;
+        text-align: right;
+        line-height: 30px;
+        border-top: 1px solid #ccc;
+    }
+}
+.foot_bottom_mr{
+    float: left;
+    margin-left: 62px;
+    width: 175px;
+    border-left: 1px solid #ccc;
+    padding-left: 50px;
+    p{
+        line-height:40px;
+        a{
+            padding-left: 35px;
+        }
+    }
+    p:nth-of-type(1){
+        background: url("http://images.changhong.com/chgw/images/Customer-service_12.png") no-repeat left center;
+    }
+    p:nth-of-type(2){
+        background: url("http://images.changhong.com/chgw/images/feedback_17.png") no-repeat left center;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+.foot_bottom_r{
+    float: left;
+    width: 285px;
+    border-left: 1px solid #ccc;
+    dl{
+        float: left;
+        margin-left: 20px;
+        text-align: center;
+    }
+    img{
+        height: 108px;
+        width: 108px;
+    }
+}
+#bottom{
+    width: 100%;
+    background: #333;
+    .bottom-con{
+        width: 1226px;
+        height: 224px;
+        margin: 0 auto;
+
+    }
+}
+.bottom_logo{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 19px;
+    padding-top: 20px;
+}
+.beian{
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    color: #999999;
+}
+.bottom_last{
+    margin-top: 24px;
+    p{
+        height: 32px;
+        float: left;
+        line-height: 32px;
+        background: url("http://cn.changhong.com/images/wzba-icon_03.png") no-repeat left center;
+        padding-left: 32px;
+        margin-left: 125px;
+        color: #999;
+    }
+    p:nth-of-type(2){
+        background: url("http://cn.changhong.com/images/cxwz-icon_06.png") no-repeat left center;
+    }
+    p:nth-of-type(3){
+        background: url("http://cn.changhong.com/images/wsjy-icon_06.png") no-repeat left center;
+    }
+    p:nth-of-type(4){
+        background: url("http://cn.changhong.com/images/kxr-icon_08.png") no-repeat left center;
+    }
+}

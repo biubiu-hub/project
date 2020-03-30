@@ -1,0 +1,95 @@
+@import "header";
+@import "logo_nav";
+@import "footer";
+
+
+body{
+    background: #fbfbfb;
+}
+.nowstation{
+    width: 100%;
+    background: #f3f3f3;
+    color: #666;
+    border-bottom: 1px solid #d7d7d7;
+    box-shadow: 3px 0px 3px 0px #e1e1e1;
+    .nowstation-con{
+        width: 1226px;
+        height: 48px;
+        margin: 0 auto;
+        p{
+            float: left;
+            height: 48px;
+            width: 100%;
+            line-height: 48px;
+            font-size: 14px;
+        }
+
+    }
+}
+.choose{
+    height: 280px;
+    width: 1150px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin:30px auto 60px auto;
+    padding: 0 38px;
+    p{
+        height: 58px;
+        line-height: 58px;
+        span{
+            margin-left: 60px;
+        }
+    }
+}
+.list {
+    width: 1226px;
+    min-height: 800px;
+    margin: 0 auto;
+    ul{
+        width: 1090px;
+        margin: 0 auto;
+    }
+    li {
+        width: 240px;
+        height: 360px;
+        padding: 10px;
+        float: left;
+        margin: 0 10px 10px 0;
+        border: 1px solid #ccc;
+        position: relative;
+        p {
+            width: 100%;
+            height: 42px;
+            line-height: 24px;
+            overflow: hidden;
+            font-size: 14px;
+            color: #000;
+            text-align: center;
+            span {
+                display: inline;
+                color: #666;
+                font-size: 12px;
+             }
+             strong{
+                 color: red;
+                 font-size: 16px;
+                 float: left;
+             }
+        }
+        .miaoshu{
+            font-size: 12px;
+            color: #666;
+        }
+        .price{
+            line-height: 42px;
+            padding-left: 30px;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
