@@ -3,6 +3,7 @@
     width: 100%;
     background: #efefef;
     margin: 0 auto;
+    margin-top: 20px;
     .footer_con{
         width: 1226px;
         height: 340px;
@@ -184,4 +185,16 @@
     p:nth-of-type(4){
         background: url("http://cn.changhong.com/images/kxr-icon_08.png") no-repeat left center;
     }
+}
+.backTop{
+    height:40px;
+    width:60px;
+    position: fixed;
+    bottom: 225px;
+    right: 45px;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
 }

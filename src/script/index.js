@@ -23,8 +23,7 @@
     const btn = document.querySelectorAll('.banner ol li');
     const leftBn = document.querySelector('.leftBn');
     const rightBn = document.querySelector('.rightBn');
-
-    let $leftBn = $('.leftBn')
+    
     let index = 0
     for (let i = 0; i < btn.length; i++) {
         btn[i].onclick = function () {
@@ -125,7 +124,7 @@
         $top >= 500 && $top <= 3500 ? $louti.show() : $louti.hide();
 
         $louceng.each(function (index, element) {
-            let $lctop = $louceng.eq(index).offset().top + $(element).height() / 2;
+            let $lctop = $louceng.eq(index).offset().top + $(element).height() ;
             if ($lctop > $top) {
                 $loutili.removeClass('active');
                 $loutili.eq(index).addClass('active');
@@ -149,4 +148,10 @@
             })
         });
     });
+    $('.backTop').on('click', function () {
+        $('html,body').animate({
+            scrollTop: 0
+        });
+    });
+
 }(jQuery);

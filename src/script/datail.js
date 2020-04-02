@@ -127,23 +127,40 @@
         }
     });
 
-    //购物车的注意事项
-    //1.购物车的核心存储什么：
-    //商品的编号：
-    //商品的数量：
+
+    // 数量加减
+    $('.add').on('click', function () {
+        let $num = $(this).parents('.goodsinfo-word').find('.p-btn input').val();
+        $num++;
+        $(this).parents('.goodsinfo-word').find('.p-btn input').val($num);
+    });
+    $('.lose').on('click', function () {
+        let $num = $(this).parents('.goodsinfo-word').find('.p-btn input').val();
+        $num--;
+        if ($num < 1) {
+            $num = 1;
+        }
+        $(this).parents('.goodsinfo-word').find('.p-btn input').val($num);
+    });
+    $('.p-btn input').on('input', function () {
+        let $reg = /^\d+$/g;//只能输入数字
+        let $value = $(this).val();
+        if (!$reg.test($value)) {//不是数字
+            $(this).val(1);
+        }
+    });
+
 
     //2.怎么存储--数组
     let arrsid = [];//存储商品的编号。
     let arrnum = [];//存储商品的数量。
-    //3.点击加入购物车按钮(确定是第一次点击还是多次点击)
-    //第一次点击：在购物车列表页面创建商品列表
-    //多次点击：之前创建过商品列表，只需要数量增加。
 
-    //取出cookie,才能判断是第一次还是多次点击
+    // 加入购物车
+
     function cookietoarray() {
         if (jscookie.get('cookiesid') && jscookie.get('cookienum')) {
-            arrsid = jscookie.get('cookiesid').split(',');//获取cookie 同时转换成数组。[1,2,3,4]
-            arrnum = jscookie.get('cookienum').split(',');//获取cookie 同时转换成数组。[12,13,14,15]
+            arrsid = jscookie.get('cookiesid').split(',');//cookie转数组
+            arrnum = jscookie.get('cookienum').split(',');//cookie转数组
         } else {
             arrsid = [];
             arrnum = [];
@@ -151,8 +168,7 @@
     }
 
 
-
-    $('.p-btn a').on('click', function () {
+    $('.join .joincart').on('click', function () {
         //获取当前商品对应的sid
         let $sid = $(this).parents('.goodsinfo').find('#smallpic').attr('sid');
         //判断是第一次点击还是多次点击
@@ -172,10 +188,6 @@
             arrnum.push($('#count').val());//将数量push到arrnum数组中
             jscookie.add('cookienum', arrnum, 10);
         }
-        alert('按钮触发了');
+        alert('加入购物车成功');
     });
-
-
-
-
 }(jQuery);

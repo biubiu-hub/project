@@ -446,61 +446,6 @@ input {
   display: block;
 }
 
-/* 重置样式 */
-body, div, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, ul, p, pre, td, textarea, th, a, span {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: '微软雅黑';
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-b, strong {
-  font-weight: normal;
-}
-
-em, i {
-  font-style: normal;
-}
-
-a, u {
-  text-decoration: none;
-}
-
-ul, ol, li {
-  list-style: none;
-}
-
-img {
-  border: 0;
-  /* 解决IE低版本：当图片有超链接的时候，存在一个蓝色边框 */
-}
-
-input {
-  /*清除input 聚焦时候的蓝色边框*/
-  outline: none;
-}
-
-/* 清除浮动*/
-.clear_fix::after {
-  content: " ";
-  display: block;
-  height: 0;
-  overflow: hidden;
-  clear: both;
-  visibility: hidden;
-}
-
-.clear_fix {
-  zoom: 1;
-}
-
 #banner {
   position: relative;
   width: 100%;
@@ -512,24 +457,20 @@ input {
   width: 1903px;
   position: relative;
 }
-
 .banner ul li {
   opacity: 0;
 }
-
 .banner ul li img {
   height: 500px;
   width: 100%;
   position: absolute;
   left: 0;
 }
-
 .banner ol {
   position: absolute;
   bottom: 18px;
   right: 200px;
 }
-
 .banner ol li {
   float: left;
   height: 8px;
@@ -810,6 +751,7 @@ input {
   width: 100%;
   background: #efefef;
   margin: 0 auto;
+  margin-top: 20px;
 }
 #footer .footer_con {
   width: 1226px;
@@ -992,6 +934,19 @@ input {
 }
 .bottom_last p:nth-of-type(4) {
   background: url("http://cn.changhong.com/images/kxr-icon_08.png") no-repeat left center;
+}
+
+.backTop {
+  height: 40px;
+  width: 60px;
+  position: fixed;
+  bottom: 225px;
+  right: 45px;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

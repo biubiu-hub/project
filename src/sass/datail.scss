@@ -172,27 +172,61 @@ body{
     }
     .p-btn {
         margin-top: 20px;
+        padding-bottom:20px;
+        border-bottom:1px solid #e1e1e1;
+        p{float: left;
+            width: 100px;
+        }
         input {
             display: inline-block;
             width: 50px;
-            height: 46px;
+            height: 30px;
             font-size: 20px;
             color: black;
-            margin-left: 50px;
             border: 1px solid gray;
-            float: left;
-        }
-        a {
-            display: block;
-            width: 100px;
-            height: 50px;
-            background-color: red;
-            font-size: 16px;
-            color: white;
-            line-height: 50px;
             text-align: center;
             float: left;
-            margin-left: 10px;
+        }
+        a{
+            background: #fff;
+            display: block;
+            width: 20px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid gray;
+            text-align: center;
+            float: left;
+            color:#333;
+        }
+        .add{
+            border-left: none;
+        }
+        .lose{
+            border-right: none;
+        }
+       
+    }
+    .join {
+        a{
+            float: left;
+        }
+        .joincart{
+            display: block;
+            width: 120px;
+            background-color: red;
+            color: white;
+            line-height: 42px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .tocart{
+            display: block;
+            width: 120px;
+            background-color: green;
+            color: white;
+            line-height: 42px;
+            text-align: center;
+            margin: 20px;
         }
     }
    
